@@ -1,6 +1,18 @@
-show remote branch: git remote 
-show remote branch(defaull) url: git remote -v
-show a remote branch(branch name) url: git remote show remote_branch_name
-show database objects: find .git/objects -type f
-show content of database objects: git -cat-file -p SAH-1
 
+
+remote branch: git remote 
+remote branch(defaull) url: git remote -v
+a remote branch(branch name) url: git remote show remote_branch_name
+database objects: find .git/objects -type f
+content of database objects: git -cat-file -p SAH-1  
+objects type: git cat-file -t SHA-1
+objects type: annotated tag; blob; tree ; commit;
+blob: not store file name  just store file content
+tree: solve the issue of blob not store file name  and  could store a group of files together 
+write blob object via internal: echo 'content' | git hash-object -w --stdin;     not -w only show hash  not store it in database
+(echo 'content' > file name; git hash-object -w file name)
+write tree object via internal: add files to index ; write index out to tree object 
+add to index: git update-index --add --cacheinfo 100644 \ SHA-1 file name(add:file not exist in index  even no index yet
+cacheinfo:adding files not exist in work directory but exist in database   100644:normal files)
+git update-index --add filename(file in work directory)
+write index/stage area out to tree object:git write-tree 
