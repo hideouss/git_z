@@ -1,0 +1,6 @@
+show remote branch: git remote 
+show remote branch(defaull) url: git remote -v
+show a remote branch(branch name) url: git remote show remote_branch_name
+show database objects: find .git/objects -type f
+show content of database objects: git -cat-file -p SAH-1
+
