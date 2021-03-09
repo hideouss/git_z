@@ -16,3 +16,5 @@ add to index: git update-index --add --cacheinfo 100644 \ SHA-1 file name(add:fi
 cacheinfo:adding files not exist in work directory but exist in database   100644:normal files)
 git update-index --add filename(file in work directory)
 write index/stage area out to tree object:git write-tree 
+create commit object: echo 'commit message' | git commit-tree SHA1
+show index content: git ls-files --stage; 
