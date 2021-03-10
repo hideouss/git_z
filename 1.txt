@@ -19,4 +19,4 @@ create commit object: echo 'commit message' | git commit-tree SHA1
 show index content: git ls-files --stage; 
 tracked file(unmodified modified stage):git know   untracked file:git not know
 git status:show work directory and stage area
-
+commit format: top-level tree   parent commit if any    committer information    blank line   commit message 
