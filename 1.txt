@@ -1,5 +1,3 @@
-
-
 remote branch: git remote 
 remote branch(defaull) url: git remote -v
 a remote branch(branch name) url: git remote show remote_branch_name
@@ -18,3 +16,7 @@ git update-index --add filename(file in work directory)
 write index/stage area out to tree object:git write-tree 
 create commit object: echo 'commit message' | git commit-tree SHA1
 show index content: git ls-files --stage; 
+run git commit will clear stage area
+tracked file(unmodified modified stage):git know   untracked file:git not know
+git status:show work directory and stage area
+
