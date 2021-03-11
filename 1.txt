@@ -22,3 +22,7 @@ git status:show work directory and stage area
 commit format: top-level tree   parent commit if any    committer information    blank line   commit message 
 git diff: compares work directory and staging area   result show changes has made that have not yet staged
 git diff: what has changed but not yet staged(git diff)    what have staged are about to commit(git diff --staged)
+git checkout: differernt branches different features            git checkout branch_name/git checkout -b branch_name
+git push -u origin branch_name   
+ 
+
