@@ -20,3 +20,5 @@ show index content: git ls-files --stage;
 tracked file(unmodified modified stage):git know   untracked file:git not know
 git status:show work directory and stage area
 commit format: top-level tree   parent commit if any    committer information    blank line   commit message 
+git diff: compares work directory and staging area   result show changes has made that have not yet staged
+git diff: what has changed but not yet staged(git diff)    what have staged are about to commit(git diff --staged)
